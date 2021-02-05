@@ -1,0 +1,18 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: oapi-extensions middleware
+paths:
+  /test:
+    get:
+      x-test: this is test
+      description: test endpoint
+      operationId: test
+      responses:
+        '200':
+          description: success response
+          content:
+            application/json:
+              schema:
+                type: object
+
